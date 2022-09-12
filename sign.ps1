@@ -32,7 +32,7 @@ $codeCertificate = Get-ChildItem Cert:\LocalMachine\My | Where-Object {$_.Subjec
 
 # Sign the PowerShell script
 # PARAMETERS:
-# FilePath - Specifies the file path of the PowerShell script to sign, eg. C:\ATA\myscript.ps1.
+# FilePath - Specifies the file path of the PowerShell script to sign, eg. D:\Code\Powershell\Passwordgenerator.ps1
 # Certificate - Specifies the certificate to use when signing the script.
 # TimeStampServer - Specifies the trusted timestamp server that adds a timestamp to your script's digital signature. Adding a timestamp ensures that your code will not expire when the signing certificate expires.
 Set-AuthenticodeSignature -FilePath "D:\Code\Powershell\Passwordgenerator.ps1" -Certificate $codeCertificate -TimeStampServer http://timestamp.digicert.com

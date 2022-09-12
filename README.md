@@ -3,4 +3,4 @@ Based on https://adamtheautomator.com/how-to-sign-powershell-script/#:~:text=To%
 
 
 You can take each line and run it your self. Change the Subject line to be what you want and the cn to match when running the check
-change the filepath to where your cert is
+change the filepath to where your powershell script is
